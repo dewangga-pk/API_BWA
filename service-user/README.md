@@ -12,7 +12,10 @@ npm i
 ```
 2. **Create .env file & configure it**
 ```
+#ACCESS PORT/SERVICE PORT
 PORT = 5000
+
+#DATABASE DETAIL
 DB_HOST = 127.0.0.1
 DB_USERNAME = root
 DB_PASSWORD = 
