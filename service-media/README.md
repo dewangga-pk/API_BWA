@@ -1,33 +1,36 @@
-# Service Media API (Part of API GATEWAY)
+# Service Users API
 ---
 ### This Project Using:
 - Node 18.8.0 (npm & npx)
+- mysql
 ---
 
-### Init Project
-1. **Create Project**
+### How To Run This Service
+1. **Install Dependencies**
 ```
-npx express-generator --no-view service media
+npm i
 ```
-2. **Add dotenv package**
+2. **Create .env file & configure it**
 ```
-npm install dotenv --save
-```
-3. **Create .env file & configure it**
-4. **Do configuration for app.js and routes dir**
----
+#ACCESS PORT/SERVICE PORT
+PORT = 8080
 
-### Progress 2
-1. **Add sequelize&seuelize-cli package (Help to create migration)**
+#DATABASE DETAIL
+DB_HOST = 127.0.0.1
+DB_USERNAME = root
+DB_PASSWORD = 
+DB_NAME = db_name
 ```
-npm install sequelize sequelize-cli --save
+3. **Migration DB**
 ```
-2. **Add nodemon package (Help to restart if server changed)**
+npx sequelize db:migrate
 ```
-npm install -g nodemon 
+4. **Seed DB**
 ```
-3. **Add is-base64&base64 image package (Help to check img base64)**
+npx sequelize db:seed:all
 ```
-npm install is-base64 base64-image --save
+5. **Run Service**
+```
+nodemon bin/www
 ```
 ---
