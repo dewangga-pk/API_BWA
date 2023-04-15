@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+Route::get('mentors', 'MentorController@index');
+Route::get('mentors/{id}', 'MentorController@show');
+Route::post('mentors', 'MentorController@create');
+Route::put('mentors/{id}', 'MentorController@update');
+Route::delete('mentors/{id}', 'MentorController@destroy');
