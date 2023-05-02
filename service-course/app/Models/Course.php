@@ -22,6 +22,11 @@ class Course extends Model
         'mentor_id'
     ];
 
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:m:s',
+        'updated_at' => 'datetime:Y-m-d H:m:s'
+    ];
+
     public function mentor()
     {
         return $this->belongsTo('App\Mentor');

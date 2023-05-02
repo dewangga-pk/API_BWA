@@ -12,6 +12,7 @@ class MentorController extends Controller
     public function index()
     {
         $mentors = Mentor::all();
+
         return response()->json([
             'status' => 'success',
             'data' => $mentors
