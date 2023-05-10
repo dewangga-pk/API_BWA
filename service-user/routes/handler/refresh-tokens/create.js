@@ -20,7 +20,6 @@ module.exports = async(req,res) => {
   }
 
   const user = await User.findByPk(userId);
-  console.log("Hello World");
   if(!user){
     return res.status(404).json({
       status: 'error',
