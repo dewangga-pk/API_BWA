@@ -16,8 +16,11 @@ APP_NAME = api gateway
 
 TIMEOUT = 5000
 
+HOSTNAME = http://localhost:3000
+
 URL_SERVICE_MEDIA = http://localhost:8080
 URL_SERVICE_USER = http://localhost:5000
+URL_SERVICE_COURSE = http://127.0.0.1:8000
 
 JWT_SECRET = jwttesting123
 JWT_SECRET_REFRESH_TOKEN = refreshtoken!23
