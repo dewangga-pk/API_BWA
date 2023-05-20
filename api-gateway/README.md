@@ -10,17 +10,20 @@
 ```
 npm i
 ```
-2. **Create .env file & configure it**
+2. **Copy file .env.example to .env & configure it**
+
+Here the example of configured .env file
 ```
 APP_NAME = api gateway
 
 TIMEOUT = 5000
 
-HOSTNAME = http://localhost:3000
+HOSTNAME = http://127.0.0.1:3000
 
-URL_SERVICE_MEDIA = http://localhost:8080
-URL_SERVICE_USER = http://localhost:5000
+URL_SERVICE_MEDIA = http://127.0.0.1:8080
+URL_SERVICE_USER = http://127.0.0.1:5000
 URL_SERVICE_COURSE = http://127.0.0.1:8000
+URL_SERVICE_ORDER_PAYMENT = http://127.0.0.1:8001
 
 JWT_SECRET = jwttesting123
 JWT_SECRET_REFRESH_TOKEN = refreshtoken!23

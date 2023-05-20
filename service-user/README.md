@@ -10,16 +10,15 @@
 ```
 npm i
 ```
-2. **Create .env file & configure it**
+2. **Copy file .env.example to .env & configure it**
+Here the example of configured .env file:
 ```
-#ACCESS PORT/SERVICE PORT
 PORT = 5000
 
-#DATABASE DETAIL
 DB_HOST = 127.0.0.1
 DB_USERNAME = root
 DB_PASSWORD = 
-DB_NAME = db_name
+DB_NAME = user_database
 ```
 3. **Migration DB**
 ```
