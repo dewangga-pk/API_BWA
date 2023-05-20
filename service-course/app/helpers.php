@@ -42,3 +42,8 @@ function getUserByIds($userIds = []) {
     ];
   }
 }
+
+function postOrder($params)
+{
+  $url = env('SERVICE_ORDER_PAYMENT_URL').'api/orders';
+}
